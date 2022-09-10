@@ -21,9 +21,9 @@ Business Intelligence Lead
 EMAIL = "shaikhmisba86@gmail.com"
 SOCIAL_MEDIA = {
     "YouTube": "https://youtube.com/c/codingisfun",
-    "LinkedIn": "https://linkedin.com",
+    "LinkedIn": "https://linkedin.com/in/misba-ul-zama-shaikh/",
     "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
+    # "Twitter": "https://twitter.com",
 }
 PROJECTS = {
     # "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
@@ -47,10 +47,10 @@ profile_pic = Image.open(profile_pic)
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
-    st.image(profile_pic, width=230)
+    st.image(profile_pic, width=200)
 
 with col2:
-    st.title(NAME)
+    st.subtitle(NAME)
     st.write(DESCRIPTION)
     st.download_button(
         label=" 📄 Download Resume",
@@ -70,7 +70,7 @@ for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
 
 # --- EXPERIENCE & QUALIFICATIONS ---
 st.write("#")
-st.subheader("Experience & Qulifications")
+st.subheader("Experience and Qualifications")
 st.write(
     """
 - ✔️ 12 Years expereince extracting actionable insights from data
